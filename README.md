@@ -19,8 +19,8 @@ app.listen(port, () => {
 
 Take care of the location of css and img files
 
-CSS eg:- "<link rel="stylesheet" type="text/css" href="/form/style.css">"
-IMG eg:- "<img class="im" src="/form/login.png">"
+CSS eg:- "<link rel="stylesheet" type="text/css" href="/form/style.css""
+IMG eg:- "<img class="im" src="/form/login.png""
 
 
 The structure of the directories matter a lot. Even if the server code is written correctly then also there may be chance that the page is not completely rendered on the given port.
