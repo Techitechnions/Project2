@@ -12,6 +12,7 @@
 }
 
 
+
 .sec2{
     width: 800px;
    
@@ -83,7 +84,46 @@ input{
 
 button{
     font-size: 18px;
-    border-radius: 3px;
+    border-radius: 8px;
     text-align: center;
-    padding: 10px 10px;
+    /* padding: 10px 10px; */
+    background-color:slateblue;
+    
+
+    display: inline-block;
+  
+  border: none;
+  color: #FFFFFF;
+  
+  font-size: 20px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
 }
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  button:hover span {
+    padding-right: 25px;
+  }
+  
+  button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

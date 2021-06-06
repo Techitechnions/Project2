@@ -14,6 +14,14 @@ const connectionString='postgressql://username:password@localhost:5432/databasen
 const client= new Client({
     connectionString:connectionString
 })
+
+
+
+
+////////////////////////////////////////// PSQL Query//////////////////////////////
+
+
+
 //Select query
 // client.connect()
 // client.query('Select * from public."Stud"',(err,res)=> {
