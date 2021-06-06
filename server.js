@@ -1,4 +1,6 @@
 
+////////////////////////////Step 1 Rendering your html page////////////////////////////////////////////
+
 const express=require('express');
 const app=express();
 const port= 9000;
@@ -19,14 +21,19 @@ app.get('/submit',function(req,res){
   console.log("Data Saved");
 })
 
+////////////////////////////Step 2 Connection with Postgres////////////////////////////////////////////
+
 const {Pool,Client}= require('pg');
 
-const connectionString='postgressql://abhavyaverma:password@localhost:5432/abhavyaverma'
+const connectionString='postgressql://username:password@localhost:5432/databasename'
 
 
 const client= new Client({
     connectionString:connectionString
 })
+
+
+////////////////////////////Step 3  Inserting the values////////////////////////////////////////////
 
 app.post("/",(req,res)=>{
     const { f_name,mail,phone}=req.body
